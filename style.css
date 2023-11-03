@@ -1,0 +1,388 @@
+@charset "UTF-8";
+
+.body.start {
+  background: none;
+}
+
+.body {
+  background-image: url(./background.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #fff;
+}
+.container {
+  overflow: hidden;
+  box-sizing: border-box;
+  height: 100vh;
+}
+
+.tittle {
+  margin: 5vh 0 3vh 0;
+  font-weight: bold;
+  font-size: 6vw;
+  color: #7ac8c6;
+  text-align: center;
+}
+h2 {
+  margin: 0 0 5vh 0;
+  text-align: center;
+  font-weight: bold;
+  font-size: 5vw;
+  font-weight: bold;
+  color: #fccb00;
+  -webkit-text-stroke: 1px #ee8195;
+  text-stroke: 1px #ee8195;
+}
+.selectTime {
+  text-align: center;
+}
+.timerContent {
+  text-align: center;
+}
+.tittle.displayNone {
+  display: none;
+}
+.selectTime.displayNone {
+  display: none;
+}
+.timerContent.displayNone {
+  display: none;
+}
+.selectButton {
+  width: 50vw;
+  border: 4px solid #7ac8c6;
+  border-radius: 25px;
+  background-color: #ee8195;
+  padding: 10px;
+  font-size: 5vw;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: #fff;
+}
+.selectTime {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.selectButton:hover {
+  background-color: #ff7189;
+}
+
+.returnButtonArea {
+  margin-top: 60px;
+}
+.startButton {
+  width: 25vw;
+  border: 4px solid #fff;
+  border-radius: 25px;
+  background-color: #ee8195;
+  padding: 10px;
+  font-size: 3vw;
+  font-weight: bold;
+  margin: 50px 0 30px 0;
+  color: #fff;
+}
+.stopButton {
+  width: 25vw;
+  border: 4px solid #fff;
+  border-radius: 25px;
+  background-color: #fccb00;
+  padding: 10px;
+  font-size: 3vw;
+  font-weight: bold;
+  margin: 50px 0 30px 10px;
+  color: #fff;
+}
+.stopButton:hover {
+  background-color: #b18d00;
+}
+.startButton:hover {
+  background-color: #b65f6f;
+}
+.returnButton {
+  width: 30vw;
+  border: 4px solid #fff;
+  border-radius: 25px;
+  background-color: #7ac8c6;
+  padding: 10px;
+  font-size: 3vw;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: #fff;
+}
+.returnButton:hover {
+  background-color: #558b8a;
+}
+.timerDisplay {
+  font-weight: bold;
+  font-size: 8vw;
+  margin-bottom: 3vh;
+  background-color: #fff;
+  color: blue;
+  border-radius: 25px;
+  padding: 10px;
+  border: 4px solid #7ac8c6;
+}
+
+/* 時間選択をふわっと */
+.fadein {
+  opacity: 0;
+  transform: translate(0,0);
+  transition: all 1.0s;
+}
+.fadein.fadein-right {
+  transform: translate(100%,0);
+}
+.fadein.on {
+  opacity: 1 !important;
+  transform: translate(0, 0) !important;
+}
+
+/* タイトルカーテンコール */
+.curtainCallUp {
+  width: 100vw;
+  height: 50vh;
+  background-color: #7ac8c6;
+}
+.curtainCallDown {
+  width: 100vw;
+  height: 50vh;
+  background-color: #ee8195;
+}
+.curtainCallBorder.wait {
+  transform: translateX(-100vw);
+}
+.curtainCallBorder {
+  width: 100vw;
+  margin: 0;
+  height: 0.1px;
+  background-color: #fccb00;
+  border: none;
+  transition: transform 2s;
+  transform: translateX(0);
+  box-shadow: 0 0 8px 3px #fccb00;
+}
+.curtainCallUp.start {
+  transition: transform 2s;
+  transform: translateY(-50vh);
+}
+.curtainCallDown.start {
+  transition: transform 2s;
+  transform: translateY(50vh);
+}
+.curtainCallBorder.end {
+  transition: transform 2s;
+  transform: translateX(100vw);
+}
+.curtainCallUp.displayNone {
+  display: none;
+}
+.curtainCallDown.displayNone {
+  display: none;
+}
+.curtainCallBorder.displayNone {
+  display: none;
+}
+
+.footer {
+  margin-top: 10px;
+  color: #000;
+  font-weight: bold;
+  text-align: center;
+}
+
+@media screen and (max-width:800px)  {
+  .body.start {
+    background: none;
+  }
+  
+  .body {
+    background-image: url(./background.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #fff;
+  }
+  .container {
+    overflow: hidden;
+    box-sizing: border-box;
+    height: 100vh;
+  }
+  
+  .tittle {
+    margin: 5vh 0;
+    font-weight: bold;
+    font-size: 10vw;
+    color: #7ac8c6;
+    text-align: center;
+  }
+  h2 {
+    margin: 0 0 5vh 0;
+    text-align: center;
+    font-weight: bold;
+    font-size: 7vw;
+    font-weight: bold;
+    color: #fccb00;
+    -webkit-text-stroke: 1px #ee8195;
+    text-stroke: 1px #ee8195;
+  }
+  .selectTime {
+    text-align: center;
+  }
+  .timerContent {
+    text-align: center;
+  }
+  .tittle.displayNone {
+    display: none;
+  }
+  .selectTime.displayNone {
+    display: none;
+  }
+  .timerContent.displayNone {
+    display: none;
+  }
+  .selectButton {
+    width: 50%;
+    border: 3px solid #7ac8c6;
+    border-radius: 25px;
+    background-color: #ee8195;
+    padding: 10px;
+    font-size: 5vw;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #fff;
+  }
+  .selectTime {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .selectButton:hover {
+    background-color: #ff7189;
+  }
+
+  .returnButtonArea {
+    margin-top: 60px;
+  }
+  .startButton {
+    width: 40vw;
+    border: 4px solid #fff;
+    border-radius: 25px;
+    background-color: #ee8195;
+    padding: 10px;
+    font-size: 5vw;
+    font-weight: bold;
+    margin: 50px 0 30px 0;
+    color: #fff;
+  }
+  .stopButton {
+    width: 40vw;
+    border: 4px solid #fff;
+    border-radius: 25px;
+    background-color: #fccb00;
+    padding: 10px;
+    font-size: 5vw;
+    font-weight: bold;
+    margin: 50px 0 30px 10px;
+    color: #fff;
+  }
+  .stopButton:hover {
+    background-color: #b18d00;
+  }
+  .startButton:hover {
+    background-color: #b65f6f;
+  }
+  .returnButton {
+    width: 50vw;
+    border: 4px solid #fff;
+    border-radius: 25px;
+    background-color: #7ac8c6;
+    padding: 10px;
+    font-size: 5vw;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #fff;
+  }
+  .returnButton:hover {
+    background-color: #558b8a;
+  }
+  .timerDisplay {
+    font-weight: bold;
+    font-size: 25vw;
+    margin-bottom: 3vh;
+    background-color: #fff;
+    color: blue;
+    border-radius: 25px;
+    padding: 10px;
+    border: 3px solid #7ac8c6;
+  }
+
+  /* 時間選択をふわっと */
+  .fadein {
+    opacity: 0;
+    transform: translate(0,0);
+    transition: all 1.0s;
+  }
+  .fadein.fadein-right {
+    transform: translate(100%, 0);
+  }
+  .fadein.on {
+    opacity: 1 !important;
+    transform: translate(0, 0) !important;
+  }
+
+  /* タイトルカーテンコール */
+  .curtainCallUp {
+    width: 100vw;
+    height: 50vh;
+    background-color: #7ac8c6;
+  }
+  .curtainCallDown {
+    width: 100vw;
+    height: 50vh;
+    background-color: #ee8195;
+  }
+  .curtainCallBorder.wait {
+    transform: translateX(-100vw);
+  }
+  .curtainCallBorder {
+    width: 100vw;
+    margin: 0;
+    height: 0.1px;
+    background-color: #fccb00;
+    border: none;
+    transition: transform 2s;
+    transform: translateX(0);
+    box-shadow: 0 0 8px 3px #fccb00;
+  }
+  .curtainCallUp.start {
+    transition: transform 2s;
+    transform: translateY(-50vh);
+  }
+  .curtainCallDown.start {
+    transition: transform 2s;
+    transform: translateY(50vh);
+  }
+  .curtainCallBorder.end {
+    transition: transform 2s;
+    transform: translateX(100vw);
+  }
+  .curtainCallUp.displayNone {
+    display: none;
+  }
+  .curtainCallDown.displayNone {
+    display: none;
+  }
+  .curtainCallBorder.displayNone {
+    display: none;
+  }
+  .footer {
+    margin-top: 10px;
+    color: #000;
+    font-weight: bold;
+    text-align: center;
+  }
+}

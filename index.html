@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ラーメンタイマー</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="body start">
+  <div class="container">
+    <main>
+      <section class="curtainCall">
+        <div class="curtainCallUp"></div>
+        <hr class="curtainCallBorder wait">
+        <div class="curtainCallDown"></div>
+      </section>
+      <section class="tittle fadein fadein-right">
+        <h1>ラーメンタイマー</h1>
+      </section>
+      <section class="selectTime fadein fadein-right">
+        <h2>時間を選択してね</h2>
+        <button class="selectButton" id="threeButton">３分</button>
+        <button class="selectButton" id="fourButton">４分</button>
+        <button class="selectButton" id="fiveButton">５分</button>
+      </section>
+      <section class="timerContent displayNone">
+        <div class="timerDisplay" id="timerDisplay">
+
+        </div>
+        <div class="timerButton">
+          <button class="startButton" id="startButton">スタート</button>
+          <button class="stopButton" id="stopButton">音を止める</button>
+          <div class="returnButtonArea">
+            <button class="returnButton" id="returnButton">時間選択に戻る</button>
+          </div>  
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="copyright">&copy;2023 Keita Nakao</div>
+    </footer>
+  </div>
+  <script src="ramentimer.js"></script>
+</body>
+</html>
